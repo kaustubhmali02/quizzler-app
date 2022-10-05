@@ -1,4 +1,5 @@
 import requests
+
 # import pprint
 
 parameters = {
@@ -9,7 +10,6 @@ parameters = {
 response = requests.get(url="https://opentdb.com/api.php", params=parameters)
 question_data = response.json()["results"]
 # pprint.pprint(data)
-
 
 
 # question_data = [
